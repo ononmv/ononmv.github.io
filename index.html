@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="never">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/dot/1.1.2/doT.min.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.1.1/aes.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <base href="https://47.93.186.42:63345/">
+    <link rel="stylesheet" href="/static/css/play.css">
+    <script src="/static/js/play.js"></script>
+    <script src="/play_tpl.js"></script>
+    <script language="JavaScript">
+        var pid=window.location.href;
+        let p=pid.lastIndexOf('#');
+        if (p>0)
+        {
+            pid=pid.substr(p+1);
+            var o = document.createElement("script");
+	    o.src='/play/'+pid+'.js';
+	    document.getElementsByTagName('head')[0].appendChild(o);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
